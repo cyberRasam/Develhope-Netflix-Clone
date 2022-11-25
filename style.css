@@ -1,15 +1,57 @@
-* {
-
-}
-
 html {
-
+  color: #333;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 16px;
+  background: black;
 }
 
-body{
-
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*
 Common css rules
 */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  align-items: center;
+}
+
+.logo {
+  max-width: 120px;
+}
+.logo img {
+  width: 100%;
+}
+
+.sign-in-btn {
+  background: #e50914;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding: 8px 15px;
+}
+
+header {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/images/header-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  background-size: 100%;
+}
+
+.header-title {
+  font-size: 53px;
+  width: 45%;
+  margin: 180px auto 0 auto;
+  letter-spacing: 2px;
+}
