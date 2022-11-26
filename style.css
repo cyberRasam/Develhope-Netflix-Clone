@@ -6,6 +6,9 @@ html {
   background: black;
 }
 
+:root{
+  --footer_tint: rgb(125,125,125)
+}
 body {
   margin: 0;
   padding: 0;
@@ -54,4 +57,59 @@ header {
   width: 45%;
   margin: 180px auto 0 auto;
   letter-spacing: 2px;
+}
+
+/*
+Footer 
+*/
+
+.footer_content{
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_container{
+  margin: 20px 3rem 20px 3rem;
+  max-width: 70%;
+}
+
+footer{
+  color: var(--footer_tint);
+  text-decoration: none;
+}
+
+
+footer p a:hover{
+  text-decoration: underline;
+}
+
+.footer_nav a{
+  text-decoration: none;
+  color: var(--footer_tint);
+}
+
+.footer_nav a:hover{
+  text-decoration: underline;
+}
+
+.footer_nav{
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  justify-content: end;
+  align-content: end;
+}
+
+.footer_nav_links{
+  margin: 20px 2rem;
+
+}
+
+.positioning{
+  margin: 10px 2rem;
+}
+
+@media screen (
+  max-width: 720px; 
+){
+  margin: 0;
 }
