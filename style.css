@@ -145,7 +145,7 @@ footer{
 }
 
 .footer_container{
-  margin: 3rem 0;
+  margin: 3rem 0 1rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -170,9 +170,10 @@ footer{
 
 .footer_navbar{
   font-size: 14px;
-  margin-top: 1rem;
+  margin: 2rem 0 2.5rem 0;
   display: grid;
   grid-column-gap: 4rem;
+  grid-row-gap: 0.8rem;
   grid-template-columns: auto auto auto auto;
 }
 
@@ -196,6 +197,18 @@ footer{
     align-items: center;
   }
   /*Header END*/
+
+  /*Footer*/
+
+  .footer_navbar{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 0.8rem;
+    margin: 1.5rem 0 2rem 0;
+  }
+
+  .footer_container{
+    width: 70%;
+  }
 
 }
 
@@ -223,6 +236,17 @@ footer{
     max-width: 140px;
   }
   /*Header END*/
+
+  /*Footer*/
+  .footer_navbar{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 0.8rem;
+    margin: 1.5rem 0 2rem 0;
+  }
+
+  .footer_container{
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 740px) {
@@ -237,6 +261,18 @@ footer{
     max-width: 65%;
   }
   /*Header END*/
+
+  /*Footer*/
+  .footer_navbar{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .footer_container{
+    width: 88%;
+    margin: 5rem 0 1rem 2rem;
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -266,36 +302,20 @@ footer{
     margin: 0;
   }
   /*Header END*/
-}
 
-/*Responsive rules footer*/ 
-
-@media screen and (max-width: 560px) {
+  /*Footer*/
+  
   .footer_navbar{
-    font-size: 14px;
-    margin-top: 1rem;
-    display: grid;
-    grid-column-gap: 4rem;
-    grid-template-columns: auto auto;
+    grid-template-columns: 145px 145px;
+    grid-column-gap: 2rem;
+    margin: 2rem 0 2rem 0;
   }
+
+  .footer_container{
+    width: 80%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
 }
 
-@media screen and (max-width: 740px) {
-  .footer_navbar{
-    font-size: 14px;
-    margin-top: 1rem;
-    display: grid;
-    grid-column-gap: 4rem;
-    grid-template-columns: auto auto auto;
-  }
-}
-
-@media screen and (max-width: 940px) {
-  .footer_navbar{
-    font-size: 14px;
-    margin-top: 1rem;
-    display: grid;
-    grid-column-gap: 4rem;
-    grid-template-columns: auto auto auto;
-  }
-}
