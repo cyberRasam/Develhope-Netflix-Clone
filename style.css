@@ -4,6 +4,7 @@ Common css rules
 :root {
   --white-color: #fff;
   --common-color: #e50914;
+  --footer: rgb(125,125,125);
 
 }
 
@@ -131,9 +132,56 @@ input[type="email"] {
 }
 
 
-
 /*Header END*/
 
+/*
+Footer 
+*/
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_container{
+  margin: 3rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.footer_content{
+  text-decoration: none;
+  color: var(--footer);
+  font-size: 1em;
+}
+
+
+.footer_content a{
+  text-decoration: none;
+  color: var(--footer);
+}
+
+.footer_content a:hover{
+  text-decoration: underline;
+}
+
+.footer_navbar{
+  font-size: 14px;
+  margin: 2rem 0 2.5rem 0;
+  display: grid;
+  grid-column-gap: 4rem;
+  grid-row-gap: 0.8rem;
+  grid-template-columns: auto auto auto auto;
+}
+
+.netflix_albania{
+  font-size: 14px;
+}
+
+/*Footer END*/
 
 
 /*Responsive rules*/ 
@@ -148,6 +196,20 @@ input[type="email"] {
   .navbar {
     align-items: center;
   }
+  /*Header END*/
+
+  /*Footer*/
+
+  .footer_navbar{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 0.8rem;
+    margin: 1.5rem 0 2rem 0;
+  }
+
+  .footer_container{
+    width: 70%;
+  }
+
 }
 
 @media screen and (max-width: 940px) {
@@ -173,6 +235,18 @@ input[type="email"] {
   .logo {
     max-width: 140px;
   }
+  /*Header END*/
+
+  /*Footer*/
+  .footer_navbar{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 0.8rem;
+    margin: 1.5rem 0 2rem 0;
+  }
+
+  .footer_container{
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 740px) {
@@ -185,6 +259,19 @@ input[type="email"] {
   }
   input[type="email"]{
     max-width: 65%;
+  }
+  /*Header END*/
+
+  /*Footer*/
+  .footer_navbar{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .footer_container{
+    width: 88%;
+    margin: 5rem 0 1rem 2rem;
   }
 }
 
@@ -214,4 +301,21 @@ input[type="email"] {
   .sign-in-btn {
     margin: 0;
   }
+  /*Header END*/
+
+  /*Footer*/
+  
+  .footer_navbar{
+    grid-template-columns: 145px 145px;
+    grid-column-gap: 2rem;
+    margin: 2rem 0 2rem 0;
+  }
+
+  .footer_container{
+    width: 80%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
 }
+
