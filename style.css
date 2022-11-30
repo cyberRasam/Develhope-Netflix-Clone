@@ -4,8 +4,7 @@ Common css rules
 :root {
   --white-color: #fff;
   --common-color: #e50914;
-  --footer: rgb(125,125,125);
-
+  --footer: rgb(125, 125, 125);
 }
 
 body {
@@ -33,7 +32,7 @@ HEADER
 .navbar {
   display: flex;
   justify-content: space-between;
-  
+
   margin: -1.5rem 2rem;
 }
 
@@ -51,11 +50,10 @@ select {
   padding: 8px 3px;
   appearance: 1;
 }
-select option{
+select option {
   background: gray;
   border: none;
 }
-
 
 .logo {
   max-width: 220px;
@@ -73,12 +71,17 @@ select option{
   width: 10ch;
   margin: 2ch;
   font-size: 16px;
-  cursor: pointer; 
+  cursor: pointer;
   text-decoration: solid;
 }
 
 header {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.811), rgba(24, 24, 24, 0.411), rgba(0, 0, 0, 0.811)),
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.811),
+      rgba(24, 24, 24, 0.411),
+      rgba(0, 0, 0, 0.811)
+    ),
     url(./images/header-background.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -86,7 +89,7 @@ header {
   text-align: center;
   background-size: cover;
   box-sizing: content-box;
-} 
+}
 
 .header-title {
   font-size: 63px;
@@ -111,11 +114,11 @@ header {
   background: var(--common-color);
   color: white;
   border: none;
-  padding: 1rem 2rem ;
+  padding: 1rem 2rem;
   font-size: 1rem;
   position: relative;
   top: 2px;
-  left: -5px; 
+  left: -5px;
   margin-bottom: 10rem;
   cursor: pointer;
   outline: none;
@@ -126,25 +129,102 @@ input[type="email"] {
   padding: 20px;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
-  border:none;
+  border: none;
   width: 450px;
   outline: none;
 }
 
-
 /*Header END*/
+
+/*Main Start*/
+/*Faq Section*/
+
+.faq-title {
+  color: var(--white-color);
+  font-size: 48px;
+  width: 200;
+  line-height: 100px;
+}
+
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.faq-section input {
+  display: none;
+}
+.faq-section label {
+  display: block;
+  padding: 20px 30px;
+  margin: 0 0 8px 0;
+  width: 50%;
+  cursor: pointer;
+  background: #303030;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.faq-section label ion-icon {
+  display: inline-block;
+  color: #fff;
+  font-size: 36px;
+}
+
+.faq-section label .close-out {
+  display: none;
+}
+
+.answer {
+  background: #303030;
+  color: #fff;
+  width: 50%;
+  padding: 4px 30px;
+  margin: -7.5px 0 8px 0;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.question-input + label + .answer {
+  display: none;
+}
+
+.question-input:checked + label + .answer {
+  display: block;
+}
+
+.question-input:checked + label ion-icon {
+  transform: rotate(45deg);
+  transition: 100ms;
+}
+
+.faq-cta {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: -6rem;
+}
+/*Faq Section End*/
+/*Main End*/
 
 /*
 Footer 
 */
 
-footer{
+footer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.footer_container{
+.footer_container {
   margin: 3rem 0 1rem 0;
   display: flex;
   flex-direction: column;
@@ -152,23 +232,22 @@ footer{
   width: 50%;
 }
 
-.footer_content{
+.footer_content {
   text-decoration: none;
   color: var(--footer);
   font-size: 1em;
 }
 
-
-.footer_content a{
+.footer_content a {
   text-decoration: none;
   color: var(--footer);
 }
 
-.footer_content a:hover{
+.footer_content a:hover {
   text-decoration: underline;
 }
 
-.footer_navbar{
+.footer_navbar {
   font-size: 14px;
   margin: 2rem 0 2.5rem 0;
   display: grid;
@@ -177,14 +256,13 @@ footer{
   grid-template-columns: auto auto auto auto;
 }
 
-.netflix_albania{
+.netflix_albania {
   font-size: 14px;
 }
 
 /*Footer END*/
 
-
-/*Responsive rules*/ 
+/*Responsive rules*/
 
 @media screen and (max-width: 1450px) {
   .header-title {
@@ -200,16 +278,15 @@ footer{
 
   /*Footer*/
 
-  .footer_navbar{
+  .footer_navbar {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 0.8rem;
     margin: 1.5rem 0 2rem 0;
   }
 
-  .footer_container{
+  .footer_container {
     width: 70%;
   }
-
 }
 
 @media screen and (max-width: 940px) {
@@ -222,7 +299,7 @@ footer{
     line-height: 4rem;
     margin: 120px auto 0 auto;
   }
-  input[type="email"]{
+  input[type="email"] {
     display: block;
     margin: 1rem auto;
     border-radius: 2px;
@@ -236,15 +313,21 @@ footer{
     max-width: 140px;
   }
   /*Header END*/
+  /*FAQ Section*/
 
+  .faq-title {
+    font-size: 42px;
+  }
+
+  /*FAQ Section END*/
   /*Footer*/
-  .footer_navbar{
+  .footer_navbar {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 0.8rem;
     margin: 1.5rem 0 2rem 0;
   }
 
-  .footer_container{
+  .footer_container {
     width: 80%;
   }
 }
@@ -257,26 +340,53 @@ footer{
     line-height: 3.5rem;
     margin: 120px 2.5rem 0 2.5rem;
   }
-  input[type="email"]{
+  input[type="email"] {
     max-width: 65%;
   }
   /*Header END*/
 
+  /*Faq Section*/
+
+  .faq-title {
+    font-size: 24px;
+  }
+
+  .faq-section label {
+    font-size: 16px;
+    width: 75%;
+  }
+
+  .faq-section label ion-icon {
+    height: 18px;
+    width: 18px;
+  }
+
+  .answer {
+    font-size: 16px;
+    width: 75%;
+  }
+
+  .question-input:checked + label + .answer {
+    display: block;
+    margin-top: -6.5px;
+  }
+
+  /*Faq End*/
   /*Footer*/
-  .footer_navbar{
+  .footer_navbar {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 2rem;
     margin: 2rem 0;
   }
 
-  .footer_container{
+  .footer_container {
     width: 88%;
     margin: 5rem 0 1rem 2rem;
   }
 }
 
 @media screen and (max-width: 560px) {
-.header-title {
+  .header-title {
     font-size: 40px;
     margin: 2rem 0.5rem 0 0.5rem;
   }
@@ -304,18 +414,16 @@ footer{
   /*Header END*/
 
   /*Footer*/
-  
-  .footer_navbar{
+
+  .footer_navbar {
     grid-template-columns: 145px 145px;
     grid-column-gap: 2rem;
     margin: 2rem 0 2rem 0;
   }
 
-  .footer_container{
+  .footer_container {
     width: 80%;
     justify-content: flex-start;
     align-items: flex-start;
   }
-
 }
-
