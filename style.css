@@ -125,7 +125,7 @@ header {
   font-size: 20px;
 }
 
-input[type="email"] {
+input[type='email'] {
   padding: 20px;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -137,6 +137,95 @@ input[type="email"] {
 /*Header END*/
 
 /*Main Start*/
+
+/*DESCRIPTION START*/
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 46px;
+  padding: 70px 35px;
+  align-items: center;
+  justify-items: center;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+div.reversed > div.texts {
+  order: 2;
+}
+
+div.texts h1 {
+  font-size: 3.125rem;
+  color: var(--white-color);
+  margin-bottom: 8px;
+}
+
+div.texts P {
+  font-size: 1.625rem;
+  color: var(--white-color);
+}
+
+.media {
+  position: relative;
+}
+
+.media.s1 img {
+  width: 400px;
+}
+
+.media.s1 video {
+  width: 293px;
+  position: absolute;
+  top: 62px;
+  left: 52px;
+  z-index: -1;
+}
+
+/*second card*/
+.card div.download-card {
+  border: 2px solid #666;
+  border-radius: 15px;
+  padding: 15px;
+  height: 95px;
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  margin-left: -155px;
+  color: var(--white-color);
+  font-size: 16px;
+  gap: 15px;
+  width: 280px;
+  background-color: #000;
+}
+
+.card div.download-card img.card2-cover {
+  height: 75px;
+  width: auto;
+}
+
+/*third card*/
+
+.media.s2 img {
+  width: 450px;
+}
+
+.media.s2 video {
+  width: 272px;
+  position: absolute;
+  top: 33px;
+  left: 88px;
+  z-index: -1;
+}
+
+/*DESCRIPTION END*/
+
 /*Faq Section*/
 
 .faq-title {
@@ -276,6 +365,61 @@ footer {
   }
   /*Header END*/
 
+  /*Description start*/
+
+  .card .texts h1 {
+    font-size: 2rem;
+  }
+
+  .card .texts p {
+    font-size: 1.2rem;
+  }
+
+  .media.s1 img {
+    width: 300px;
+  }
+
+  .media.s1 video {
+    width: 230px;
+    position: absolute;
+    top: 42px;
+    left: 40px;
+    z-index: -1;
+  }
+
+  .card div.download-card {
+    padding: 15px;
+    height: 68px;
+    bottom: 25px;
+    width: 280px;
+    align-content: center;
+    background-color: #000;
+  }
+
+  .card div.download-card img.card2-cover {
+    height: 65px;
+    width: auto;
+  }
+
+  .media.s2 img {
+    width: 300px;
+  }
+
+  .media.s2 video {
+    width: 180px;
+    position: absolute;
+    top: 32px;
+    left: 60px;
+    z-index: -1;
+  }
+
+  .download-gif {
+    height: auto;
+    width: 75px;
+  }
+
+  /*Description end*/
+
   /*Footer*/
 
   .footer_navbar {
@@ -299,7 +443,7 @@ footer {
     line-height: 4rem;
     margin: 120px auto 0 auto;
   }
-  input[type="email"] {
+  input[type='email'] {
     display: block;
     margin: 1rem auto;
     border-radius: 2px;
@@ -340,10 +484,62 @@ footer {
     line-height: 3.5rem;
     margin: 120px 2.5rem 0 2.5rem;
   }
-  input[type="email"] {
+  input[type='email'] {
     max-width: 65%;
   }
   /*Header END*/
+
+  /*Description start*/
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card div.texts h1 {
+    font-size: 2.5rem;
+    color: var(--white-color);
+    margin-bottom: 8px;
+  }
+
+  div.texts P {
+    font-size: 1.4rem;
+    color: var(--white-color);
+    margin-bottom: -3rem;
+  }
+
+  div.reversed > div.texts {
+    order: 0;
+  }
+
+  .media.s1 img {
+    width: 500px;
+  }
+
+  .media.s1 video {
+    width: 360px;
+    position: absolute;
+    top: 78px;
+    left: 70px;
+    z-index: -1;
+  }
+
+  .media.s2 img {
+    width: 500px;
+  }
+
+  .media.s2 video {
+    width: 300px;
+    position: absolute;
+    top: 58px;
+    left: 90px;
+    z-index: -1;
+  }
+
+  /*Description end*/
 
   /*Faq Section*/
 
@@ -412,6 +608,42 @@ footer {
     margin: 0;
   }
   /*Header END*/
+
+  /*Description start*/
+
+  .card div.texts h1 {
+    font-size: 2.2rem;
+  }
+
+  div.texts P {
+    font-size: 1.2rem;
+  }
+
+  .media.s1 img {
+    width: 400px;
+  }
+
+  .media.s1 video {
+    width: 293px;
+    position: absolute;
+    top: 63px;
+    left: 53px;
+    z-index: -1;
+  }
+
+  .media.s2 img {
+    width: 400px;
+  }
+
+  .media.s2 video {
+    width: 250px;
+    position: absolute;
+    top: 45px;
+    left: 70px;
+    z-index: -1;
+  }
+
+  /*Description start*/
 
   /*Footer*/
 
