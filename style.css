@@ -624,10 +624,10 @@ footer {
   }
 
   .media.s1 video {
-    width: 293px;
+    width: 283px;
     position: absolute;
-    top: 63px;
-    left: 53px;
+    top: 58px;
+    left: 50px;
     z-index: -1;
   }
 
@@ -636,7 +636,7 @@ footer {
   }
 
   .media.s2 video {
-    width: 210px;
+    width: 240px;
     position: absolute;
     top: 45px;
     left: 70px;
@@ -670,8 +670,8 @@ footer {
   .media.s1 video {
     width: 223px;
     position: absolute;
-    top: 50px;
-    left: 43px;
+    top: 45px;
+    left: 40px;
     z-index: -1;
   }
 
@@ -680,41 +680,10 @@ footer {
   }
 
   .media.s2 video {
-    width: 190px;
-    position: absolute;
-    top: 25px;
-    left: 60px;
-    overflow: hidden;
-    z-index: -1;
-  }
-
-  /*Description end*/
-}
-
-@media screen and (max-width: 370px) {
-  /*description*/
-
-  .media.s1 img {
-    width: 380px;
-  }
-
-  .media.s1 video {
     width: 180px;
     position: absolute;
-    top: 40px;
-    left: 34px;
-    z-index: -1;
-  }
-
-  .media.s2 img {
-    width: 380px;
-  }
-
-  .media.s2 video {
-    width: 150px;
-    position: absolute;
     top: 25px;
-    left: 50px;
+    left: 55px;
     overflow: hidden;
     z-index: -1;
   }
