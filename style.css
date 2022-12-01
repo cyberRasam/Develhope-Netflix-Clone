@@ -624,10 +624,10 @@ footer {
   }
 
   .media.s1 video {
-    width: 293px;
+    width: 283px;
     position: absolute;
-    top: 63px;
-    left: 53px;
+    top: 58px;
+    left: 50px;
     z-index: -1;
   }
 
@@ -636,14 +636,14 @@ footer {
   }
 
   .media.s2 video {
-    width: 250px;
+    width: 240px;
     position: absolute;
     top: 45px;
     left: 70px;
     z-index: -1;
   }
 
-  /*Description start*/
+  /*Description end*/
 
   /*Footer*/
 
@@ -658,4 +658,35 @@ footer {
     justify-content: flex-start;
     align-items: flex-start;
   }
+}
+
+@media screen and (max-width: 425px) {
+  /*description*/
+
+  .media.s1 img {
+    width: 380px;
+  }
+
+  .media.s1 video {
+    width: 223px;
+    position: absolute;
+    top: 45px;
+    left: 40px;
+    z-index: -1;
+  }
+
+  .media.s2 img {
+    width: 400px;
+  }
+
+  .media.s2 video {
+    width: 180px;
+    position: absolute;
+    top: 25px;
+    left: 55px;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  /*Description end*/
 }
